@@ -53,7 +53,7 @@ function MessagesBox() {
 
     try {
       const response = await axios.post(
-        "https://chatapp-qo78.onrender.com/upload",
+        "https://chatapp-zz.onrender.com/upload",
         { file: backgroundImage },
         { headers: { "Content-Type": "multipart/form-data" } }
       );
