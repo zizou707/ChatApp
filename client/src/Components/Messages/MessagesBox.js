@@ -53,13 +53,13 @@ function MessagesBox() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/upload",
+        "https://chatapp-qo78.onrender.com/upload",
         { file: backgroundImage },
         { headers: { "Content-Type": "multipart/form-data" } }
       );
 
       setBackgroundUrl(
-        JSON.stringify(response.data.filePath.split("public").pop())
+        JSON.stringify(response?.data?.filePath?.split("public").pop())
       );
     } catch (error) {
       console.log(error);

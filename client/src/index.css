@@ -33,10 +33,19 @@ body {
   justify-content: center;
   justify-items: center;
   background: rgb(86, 111, 136);
-  margin-left: 30%;
   border-radius: 3%;
-  width: 40%;
+  width: 50%;
   height: 50%;
+}
+@media (max-width:789px) {
+  .register-form-container {
+    width: 80%;
+  }
+}
+@media (min-width:789px) and (max-width:1060px) {
+  .register-form-container {
+    width: 65%;
+  }
 }
 button {
   border-radius: 2%;

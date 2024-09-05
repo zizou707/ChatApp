@@ -36,7 +36,7 @@ function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:4000/upload",
+        "https://localhost:4088/uploads",
         { file: file },
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -55,10 +55,11 @@ function Register() {
   };
 
   return (
-    <div className="register-form-container" style={{ marginLeft: "30%" }}>
+    <div className="register flex justify-center">
+    <div className="register-form-container " >
       <form
         onSubmit={registerUser}
-        className="form flex flex-col w-1/2 gap-3 justify-center items-center"
+        className="form flex flex-col w-1/2 gap-3 justify-center items-center "
       >
         <label className="mt-2">Name</label>
         <input
@@ -158,6 +159,7 @@ function Register() {
 
       <hr />
     </div>
+   </div> 
   );
 }
 

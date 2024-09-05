@@ -29,7 +29,7 @@ export default function MessagesGlobaleState({ children, user }) {
 
   // initialization socket
   useEffect(() => {
-    const newSocket = io("http://localhost:3030/");
+    const newSocket = io("http://localhost:4088/");
 
     setSocket(newSocket);
 
