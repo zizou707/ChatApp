@@ -43,7 +43,7 @@ server.listen(PORT, () =>
   console.log(`Connected to DB & server is running at port : ${PORT}`)
 )
 
-const io = new Server(server,{ cors: "http://localhost:3000/" })
+const io = new Server(server,{ cors: "https://chatapp-zz.netlify.app/" })
 
 let onlineUsers = [];
 
