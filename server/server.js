@@ -34,9 +34,6 @@ app.use("/users/chats", chatRoutes);
 app.use("/users/messages", messageRoutes);
 //app.use('/users/notifications',notificationRoutes)
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 mongoose.connect(process.env.MONGO_URI);
 
