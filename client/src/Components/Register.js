@@ -36,7 +36,7 @@ function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        "https://localhost:4088/uploads",
+        "https://chatapp-zz.onrender.com/uploads",
         { file: file },
         { headers: { "Content-Type": "multipart/form-data" } }
       );
