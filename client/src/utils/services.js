@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const baseUrl = "https://chatapp-qo78.onrender.com";
+export const baseUrl = "https://chatapp-zz.onrender.com";
 
 export const postRequest = async (url, body) => {
   try {
